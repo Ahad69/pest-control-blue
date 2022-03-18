@@ -21,7 +21,9 @@
     font-size: 20px;
     font-weight: 700;
 }
-
+.call:hover{
+    color: white;
+}
 /* banner -------------------------------------------------------------------------------------------- */
 .banner-heading{
     font-size: 60px;
@@ -34,7 +36,7 @@ span{
     margin-right: 20px;
 }
 .banner-section{
-    background: linear-gradient(to bottom , blue ,#1D386D );
+    background: linear-gradient(to bottom , #4BABDE ,#1D386D );
 }
 .banner{
     padding-top: 100px;
@@ -171,6 +173,53 @@ label{
     top: 30px;
     right: 15px;
 }
+
+/* reliable---------------------------------------------------------------------------------------- */
+.reliable{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
+}
+.reliable-content{
+    margin-right: 15px;
+}
+.reliable-section{
+    background: linear-gradient(to bottom , #1F3870 ,#4BABDE);
+    color: white;
+}
+
+/* review----------------------------------------------------------------------------------------------- */
+.review{
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    background: white;
+    border: 5px solid #1F3870;
+    width: 70%;
+    margin: auto;
+    border-radius: 50px 0px;
+}
+.review-image{
+    padding: 40px;
+}
+.review-content{
+  
+    padding: 40px;
+}
+
+/* footer ------------------------------------------------------------------------------------------ */
+footer {
+    background-color: #002F46;
+    color: white;
+}
+.footer p {
+   font-size: 20px;
+}
+
+
 /* responsive --------------------------------------------------------------------------------------- */
 @media screen and (max-width:992px){
     .navbar img{
@@ -225,6 +274,29 @@ label{
     .treatments{
         flex-direction: column;
     }
+    .reliable{
+        flex-direction: column;
+    }
+    .reliable-content{
+        text-align: center;
+        margin-right: 0px;
+    }
+    .reliable-image img{
+        width: 100%;
+    }
+    .review{
+        flex-direction: column;
+    }
+    .review-image{
+        padding: 0;
+    }
+    .review-image img{
+        width: 100%;
+    }
+    .review-content{
+  
+        padding: 0px;
+    }
 }
 @media screen and (max-width:768px){
     .navbar img{
@@ -272,6 +344,9 @@ label{
     }
     .process-image{
         margin: auto;
+    }
+    .footer p {
+        font-size: 12px;
     }
 
 }
